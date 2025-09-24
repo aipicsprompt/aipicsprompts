@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "id": "portraits",
+      "name": "AI Portraits",
+      "description": "Stunning AI-generated portrait photography",
+      "imageCount": 24,
+      "thumbnail": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "portrait-1",
+          "url": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Professional portrait of a young woman with soft lighting, cinematic style, high quality, detailed facial features",
+          "alt": "AI generated portrait of a young woman"
+        },
+        {
+          "id": "portrait-2",
+          "url": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Male portrait with dramatic shadows, professional photography, studio lighting, confident expression",
+          "alt": "AI generated male portrait"
+        },
+        {
+          "id": "portrait-3",
+          "url": "https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Artistic portrait with natural lighting, soft focus background, warm tones, elegant composition",
+          "alt": "AI generated artistic portrait"
+        }
+      ]
+    },
+    {
+      "id": "landscapes",
+      "name": "Landscapes",
+      "description": "Breathtaking AI-created natural scenery",
+      "imageCount": 18,
+      "thumbnail": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "landscape-1",
+          "url": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Majestic mountain landscape at sunset, golden hour lighting, dramatic clouds, pristine nature",
+          "alt": "AI generated mountain landscape"
+        },
+        {
+          "id": "landscape-2",
+          "url": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Serene lake reflection with mountains, morning mist, peaceful atmosphere, ultra-realistic",
+          "alt": "AI generated lake landscape"
+        },
+        {
+          "id": "landscape-3",
+          "url": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Forest pathway with dappled sunlight, lush greenery, magical atmosphere, detailed textures",
+          "alt": "AI generated forest scene"
+        }
+      ]
+    },
+    {
+      "id": "abstract",
+      "name": "Abstract Art",
+      "description": "Creative AI-generated abstract compositions",
+      "imageCount": 32,
+      "thumbnail": "https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "abstract-1",
+          "url": "https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Fluid abstract composition with vibrant colors, organic shapes, dynamic movement, digital art",
+          "alt": "AI generated abstract art"
+        },
+        {
+          "id": "abstract-2",
+          "url": "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Geometric abstract pattern with bold colors, symmetrical design, modern art style",
+          "alt": "AI generated geometric abstract"
+        },
+        {
+          "id": "abstract-3",
+          "url": "https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Textural abstract with earth tones, layered composition, artistic depth, contemporary style",
+          "alt": "AI generated textural abstract"
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Architecture",
+      "description": "AI-designed buildings and structures",
+      "imageCount": 15,
+      "thumbnail": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "arch-1",
+          "url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Modern architectural marvel with clean lines, glass facades, innovative design, urban setting",
+          "alt": "AI generated modern architecture"
+        },
+        {
+          "id": "arch-2",
+          "url": "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Classical architecture with ornate details, historical style, elegant columns, grand entrance",
+          "alt": "AI generated classical building"
+        }
+      ]
+    }
+  ]
+}
