@@ -101,6 +101,114 @@
           "alt": "AI generated classical building"
         }
       ]
+    },
+    {
+      "id": "men",
+      "name": "Men",
+      "description": "AI-generated portraits and images of men",
+      "imageCount": 20,
+      "thumbnail": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "men-1",
+          "url": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Professional businessman portrait, confident expression, suit and tie, corporate headshot style",
+          "alt": "AI generated professional man portrait"
+        },
+        {
+          "id": "men-2",
+          "url": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Casual male portrait, friendly smile, outdoor natural lighting, relaxed atmosphere",
+          "alt": "AI generated casual man portrait"
+        },
+        {
+          "id": "men-3",
+          "url": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Athletic man portrait, fitness lifestyle, determined expression, gym environment",
+          "alt": "AI generated athletic man"
+        }
+      ]
+    },
+    {
+      "id": "women",
+      "name": "Women",
+      "description": "AI-generated portraits and images of women",
+      "imageCount": 25,
+      "thumbnail": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "women-1",
+          "url": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Professional woman portrait, confident businesswoman, elegant styling, office environment",
+          "alt": "AI generated professional woman portrait"
+        },
+        {
+          "id": "women-2",
+          "url": "https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Beautiful woman with natural makeup, soft lighting, artistic portrait style, warm tones",
+          "alt": "AI generated artistic woman portrait"
+        },
+        {
+          "id": "women-3",
+          "url": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Fashion portrait of young woman, stylish outfit, modern photography, vibrant colors",
+          "alt": "AI generated fashion woman portrait"
+        }
+      ]
+    },
+    {
+      "id": "children",
+      "name": "Children",
+      "description": "AI-generated portraits and images of children",
+      "imageCount": 18,
+      "thumbnail": "https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "child-1",
+          "url": "https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Happy child portrait, innocent smile, playful expression, natural outdoor lighting",
+          "alt": "AI generated happy child portrait"
+        },
+        {
+          "id": "child-2",
+          "url": "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Cute toddler portrait, curious expression, soft pastel colors, gentle lighting",
+          "alt": "AI generated toddler portrait"
+        },
+        {
+          "id": "child-3",
+          "url": "https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "School age child portrait, bright smile, educational setting, cheerful atmosphere",
+          "alt": "AI generated school child portrait"
+        }
+      ]
+    },
+    {
+      "id": "couples",
+      "name": "Couples",
+      "description": "AI-generated romantic and couple portraits",
+      "imageCount": 16,
+      "thumbnail": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "images": [
+        {
+          "id": "couple-1",
+          "url": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Romantic couple portrait, loving embrace, golden hour lighting, intimate moment",
+          "alt": "AI generated romantic couple portrait"
+        },
+        {
+          "id": "couple-2",
+          "url": "https://images.pexels.com/photos/1024994/pexels-photo-1024994.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Wedding couple portrait, elegant formal wear, celebration atmosphere, joyful expressions",
+          "alt": "AI generated wedding couple portrait"
+        },
+        {
+          "id": "couple-3",
+          "url": "https://images.pexels.com/photos/1024995/pexels-photo-1024995.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "prompt": "Casual couple portrait, happy together, outdoor setting, natural candid moment",
+          "alt": "AI generated casual couple portrait"
+        }
+      ]
     }
   ]
 }

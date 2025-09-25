@@ -2,27 +2,19 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Search, Filter } from "lucide-react"
+import { Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 interface HeroSectionProps {
-  onSearch: (query: string, category: string) => void
+  onSearch: (query: string) => void
 }
 
 export function HeroSection({ onSearch }: HeroSectionProps) {
   const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCategory, setSelectedCategory] = useState("all")
 
   const handleSearch = () => {
-    onSearch(searchQuery, selectedCategory)
+    onSearch(searchQuery)
   }
 
   return (
@@ -37,11 +29,9 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Discover Amazing{" "}
               <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                AI-Generated
+                AI Pics Prompts
               </span>{" "}
-              Images
             </h1>
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
               Explore thousands of stunning AI-created images across various categories. 
@@ -55,37 +45,21 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-2xl mx-auto"
           >
-            <div className="flex flex-col sm:flex-row gap-4 p-4 rounded-2xl bg-card border shadow-lg">
+            <div className="flex gap-3 p-3 sm:p-4 rounded-lg md:rounded-3xl bg-card border shadow-lg">
               <div className="flex-1 relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                 <Input
                   placeholder="Search for images..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 border-0 bg-transparent text-base"
+                  className="pl-10 border-0 bg-transparent text-base h-12"
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 />
               </div>
               
-              <div className="flex gap-2">
-                <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                  <SelectTrigger className="w-[140px] border-0 bg-muted/50">
-                    <Filter className="h-4 w-4 mr-2" />
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Categories</SelectItem>
-                    <SelectItem value="portraits">Portraits</SelectItem>
-                    <SelectItem value="landscapes">Landscapes</SelectItem>
-                    <SelectItem value="abstract">Abstract Art</SelectItem>
-                    <SelectItem value="architecture">Architecture</SelectItem>
-                  </SelectContent>
-                </Select>
-                
-                <Button onClick={handleSearch} size="lg" className="px-6">
-                  Search
-                </Button>
-              </div>
+              <Button onClick={handleSearch} className="h-12 px-8 text-base font-medium">
+                Search
+              </Button>
             </div>
           </motion.div>
         </div>
