@@ -36,18 +36,21 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <Badge className="absolute top-4 right-4 bg-background/80 text-foreground">
-                {imageCount} images
-              </Badge>
+
             </div>
-            
+
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+              <h3 className=" flex justify-between items-center text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                 {name}
+
+                <Badge className="bg-background h-6 w-6 flex items-center justify-center text-foreground">
+                  {imageCount}
+                </Badge>
+
               </h3>
-              <p className="text-muted-foreground text-sm line-clamp-2">
+              {/* <p className="text-muted-foreground text-sm line-clamp-2">
                 {description}
-              </p>
+              </p> */}
             </div>
           </CardContent>
         </Card>
