@@ -1,11 +1,47 @@
 "use client"
 
+import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Eye } from "lucide-react"
+
+// Function to format numbers with k, M, etc.
+const formatViewCount = (count: number): string => {
+  if (count >= 1000000) {
+    return (count / 1000000).toFixed(1) + 'M';
+  }
+  if (count >= 1000) {
+    return (count / 1000).toFixed(1) + 'k';
+  }
+  return count.toString();
+};
+
+// Function to get or initialize view count from localStorage
+const getInitialViewCount = (id: string): number => {
+  if (typeof window === 'undefined') return 1000; // Default for server-side rendering
+  
+  const storedCounts = JSON.parse(localStorage.getItem('categoryViewCounts') || '{}');
+  if (storedCounts[id]) {
+    return storedCounts[id];
+  }
+  // Start from 1000 for new categories
+  const newCount = 100 + Math.floor(Math.random() * 900); // Random between 1000-1900
+  storedCounts[id] = newCount;
+  localStorage.setItem('categoryViewCounts', JSON.stringify(storedCounts));
+  return newCount;
+};
+
+// Function to update view count in localStorage
+const updateViewCount = (id: string, count: number): void => {
+  if (typeof window === 'undefined') return;
+  
+  const storedCounts = JSON.parse(localStorage.getItem('categoryViewCounts') || '{}');
+  storedCounts[id] = count;
+  localStorage.setItem('categoryViewCounts', JSON.stringify(storedCounts));
+};
 
 interface CategoryCardProps {
   id: string
@@ -16,26 +52,20 @@ interface CategoryCardProps {
   index: number
 }
 
-// Function to format numbers with K notation
-const formatViewCount = (count: number): string => {
-  if (count >= 1000) {
-    return (count / 1000).toFixed(1) + 'K'
-  }
-  return count.toString()
-}
-
-// Function to generate random view count based on category
-const generateViewCount = (categoryId: string): number => {
-  // Use category ID as seed for consistent random numbers
-  const seed = categoryId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
-  const random = (seed * 9301 + 49297) % 233280 / 233280
-  
-  // Generate view counts between 1.2K to 8.9K
-  return Math.floor(1200 + random * 7700)
-}
-
 export function CategoryCard({ id, name, description, imageCount, thumbnail, index }: CategoryCardProps) {
-  const viewCount = generateViewCount(id)
+  const [viewCount, setViewCount] = useState(0);
+
+  // Initialize view count from localStorage on component mount
+  useEffect(() => {
+    const count = getInitialViewCount(id);
+    // Add a random increment between 10 and 50 on each page load
+    const increment = Math.floor(Math.random() * 41) + 10;
+    const newCount = count + increment;
+    
+    setViewCount(newCount);
+    updateViewCount(id, newCount);
+  }, [id]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -45,7 +75,7 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
       className="group"
     >
       <Link href={`/category/${id}`}>
-        <Card className="overflow-hidden border shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-card to-card/80">
+        <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-card to-card/80">
           <CardContent className="p-0">
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
@@ -57,22 +87,21 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               
-              <Badge className="absolute top-4 right-4 bg-background  flex items-center justify-center text-foreground">
-                  {imageCount} Pics
+              <div className="absolute top-4 right-4 flex items-center gap-1">
+                <Badge className="bg-background/90 backdrop-blur-sm text-foreground">
+                <Eye className="h-4 w-4 text-white" /> &nbsp;
+                  {formatViewCount(viewCount)}
                 </Badge>
+              </div>
 
             </div>
 
             <div className="p-6">
-              <h3 className=" flex justify-between items-center text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                {name}
-
-
-                <Badge className="bg-background  flex items-center justify-center text-foreground">
-                 <Eye className="h-4 w-4 mr-2" /> {formatViewCount(viewCount)}
-                </Badge>
-
-              </h3>
+              <div className="flex justify-between items-start">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                  {name}
+                </h3>
+              </div>
             </div>
           </CardContent>
         </Card>
