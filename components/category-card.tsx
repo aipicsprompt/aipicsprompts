@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Eye } from "lucide-react"
 
 interface CategoryCardProps {
   id: string
@@ -15,7 +16,26 @@ interface CategoryCardProps {
   index: number
 }
 
+// Function to format numbers with K notation
+const formatViewCount = (count: number): string => {
+  if (count >= 1000) {
+    return (count / 1000).toFixed(1) + 'K'
+  }
+  return count.toString()
+}
+
+// Function to generate random view count based on category
+const generateViewCount = (categoryId: string): number => {
+  // Use category ID as seed for consistent random numbers
+  const seed = categoryId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+  const random = (seed * 9301 + 49297) % 233280 / 233280
+  
+  // Generate view counts between 1.2K to 8.9K
+  return Math.floor(1200 + random * 7700)
+}
+
 export function CategoryCard({ id, name, description, imageCount, thumbnail, index }: CategoryCardProps) {
+  const viewCount = generateViewCount(id)
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -36,6 +56,10 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              
+              <Badge className="absolute top-4 right-4 bg-background  flex items-center justify-center text-foreground">
+                  {imageCount} Pics
+                </Badge>
 
             </div>
 
@@ -43,8 +67,9 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
               <h3 className=" flex justify-between items-center text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                 {name}
 
-                <Badge className="bg-background h-6 w-6 flex items-center justify-center text-foreground">
-                  {imageCount}
+
+                <Badge className="bg-background  flex items-center justify-center text-foreground">
+                 <Eye className="h-4 w-4 mr-2" /> {formatViewCount(viewCount)}
                 </Badge>
 
               </h3>
