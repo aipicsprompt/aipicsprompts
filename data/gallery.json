@@ -1,131 +1,17 @@
 {
   "categories": [
     {
-      "id": "portraits",
-      "name": "AI Portraits",
-      "description": "Stunning AI-generated portrait photography",
-      "imageCount": 24,
-      "thumbnail": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "portrait-1",
-          "url": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Professional portrait of a young woman with soft lighting, cinematic style, high quality, detailed facial features",
-          "alt": "AI generated portrait of a young woman"
-        },
-        {
-          "id": "portrait-2",
-          "url": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Male portrait with dramatic shadows, professional photography, studio lighting, confident expression",
-          "alt": "AI generated male portrait"
-        },
-        {
-          "id": "portrait-3",
-          "url": "https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Artistic portrait with natural lighting, soft focus background, warm tones, elegant composition",
-          "alt": "AI generated artistic portrait"
-        }
-      ]
-    },
-    {
-      "id": "landscapes",
-      "name": "Landscapes",
-      "description": "Breathtaking AI-created natural scenery",
-      "imageCount": 18,
-      "thumbnail": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "landscape-1",
-          "url": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Majestic mountain landscape at sunset, golden hour lighting, dramatic clouds, pristine nature",
-          "alt": "AI generated mountain landscape"
-        },
-        {
-          "id": "landscape-2",
-          "url": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Serene lake reflection with mountains, morning mist, peaceful atmosphere, ultra-realistic",
-          "alt": "AI generated lake landscape"
-        },
-        {
-          "id": "landscape-3",
-          "url": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Forest pathway with dappled sunlight, lush greenery, magical atmosphere, detailed textures",
-          "alt": "AI generated forest scene"
-        }
-      ]
-    },
-    {
-      "id": "abstract",
-      "name": "Abstract Art",
-      "description": "Creative AI-generated abstract compositions",
-      "imageCount": 32,
-      "thumbnail": "https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "abstract-1",
-          "url": "https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Fluid abstract composition with vibrant colors, organic shapes, dynamic movement, digital art",
-          "alt": "AI generated abstract art"
-        },
-        {
-          "id": "abstract-2",
-          "url": "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Geometric abstract pattern with bold colors, symmetrical design, modern art style",
-          "alt": "AI generated geometric abstract"
-        },
-        {
-          "id": "abstract-3",
-          "url": "https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Textural abstract with earth tones, layered composition, artistic depth, contemporary style",
-          "alt": "AI generated textural abstract"
-        }
-      ]
-    },
-    {
-      "id": "architecture",
-      "name": "Architecture",
-      "description": "AI-designed buildings and structures",
-      "imageCount": 15,
-      "thumbnail": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "arch-1",
-          "url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Modern architectural marvel with clean lines, glass facades, innovative design, urban setting",
-          "alt": "AI generated modern architecture"
-        },
-        {
-          "id": "arch-2",
-          "url": "https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Classical architecture with ornate details, historical style, elegant columns, grand entrance",
-          "alt": "AI generated classical building"
-        }
-      ]
-    },
-    {
       "id": "men",
-      "name": "Men",
-      "description": "AI-generated portraits and images of men",
-      "imageCount": 20,
-      "thumbnail": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "name": "Diwali Prompts for Men",
+      "description": "✨ Trending Diwali AI Prompt for Boys ✨ Diwali, the radiant festival of lights, celebrates happiness, devotion, and togetherness. With the power of AI, you can now create lifelike festive portraits that highlight every detail — from glowing diyas to shimmering lanterns. These unique prompts are designed to bring a cinematic, devotional feel, combining traditional outfits with soft fairy lights and dreamy bokeh effects. Ideal for social media, Pinterest inspiration, or digital art projects, these festive edits beautifully capture the true essence of Diwali.",
+      "imageCount": 21,
+      "thumbnail": "/assets/images/men/diwali/diwali pose for men.png",
       "images": [
         {
           "id": "men-1",
-          "url": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Professional businessman portrait, confident expression, suit and tie, corporate headshot style",
-          "alt": "AI generated professional man portrait"
-        },
-        {
-          "id": "men-2",
-          "url": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Casual male portrait, friendly smile, outdoor natural lighting, relaxed atmosphere",
-          "alt": "AI generated casual man portrait"
-        },
-        {
-          "id": "men-3",
-          "url": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Athletic man portrait, fitness lifestyle, determined expression, gym environment",
-          "alt": "AI generated athletic man"
+          "url": "/assets/images/men/diwali/diwali pose for men.png",
+          "alt": "AI generated professional man portrait",
+          "prompt": "A handsome young Indian man in traditional festive attire, wearing a pink floral patterned shirt, light grey slim fit pant and a Blue strap smartwatch. He is sitting gracefully, holding a decorated brass thali filled with lit diyas (oil lamps)in both hands.Her head is slightly tilted, with a gentle smile and expressive eyeslooking towards the camera. The background features warmglowing fairy lights, candles, and a blurred god laxmi idol, creating a devotional festive vibe. Foreground bokeh of alowing diyas adds depth. Cinematic photography, soft warm lighting, high detail, professional portrait style. For making this photo use the above photo and don't change her face it should be exact same 100%"
         }
       ]
     },
@@ -153,60 +39,6 @@
           "url": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1200",
           "prompt": "Fashion portrait of young woman, stylish outfit, modern photography, vibrant colors",
           "alt": "AI generated fashion woman portrait"
-        }
-      ]
-    },
-    {
-      "id": "children",
-      "name": "Children",
-      "description": "AI-generated portraits and images of children",
-      "imageCount": 18,
-      "thumbnail": "https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "child-1",
-          "url": "https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Happy child portrait, innocent smile, playful expression, natural outdoor lighting",
-          "alt": "AI generated happy child portrait"
-        },
-        {
-          "id": "child-2",
-          "url": "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Cute toddler portrait, curious expression, soft pastel colors, gentle lighting",
-          "alt": "AI generated toddler portrait"
-        },
-        {
-          "id": "child-3",
-          "url": "https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "School age child portrait, bright smile, educational setting, cheerful atmosphere",
-          "alt": "AI generated school child portrait"
-        }
-      ]
-    },
-    {
-      "id": "couples",
-      "name": "Couples",
-      "description": "AI-generated romantic and couple portraits",
-      "imageCount": 16,
-      "thumbnail": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "images": [
-        {
-          "id": "couple-1",
-          "url": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Romantic couple portrait, loving embrace, golden hour lighting, intimate moment",
-          "alt": "AI generated romantic couple portrait"
-        },
-        {
-          "id": "couple-2",
-          "url": "https://images.pexels.com/photos/1024994/pexels-photo-1024994.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Wedding couple portrait, elegant formal wear, celebration atmosphere, joyful expressions",
-          "alt": "AI generated wedding couple portrait"
-        },
-        {
-          "id": "couple-3",
-          "url": "https://images.pexels.com/photos/1024995/pexels-photo-1024995.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          "prompt": "Casual couple portrait, happy together, outdoor setting, natural candid moment",
-          "alt": "AI generated casual couple portrait"
         }
       ]
     }
