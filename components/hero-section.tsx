@@ -57,7 +57,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
                 />
               </div>
               
-              <Button onClick={handleSearch} className="h-12 px-8 text-base font-medium">
+              <Button onClick={handleSearch} className="h-12 px-8 text-white font-medium">
                 Search
               </Button>
             </div>

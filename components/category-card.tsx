@@ -48,9 +48,6 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
                 </Badge>
 
               </h3>
-              {/* <p className="text-muted-foreground text-sm line-clamp-2">
-                {description}
-              </p> */}
             </div>
           </CardContent>
         </Card>

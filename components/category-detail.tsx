@@ -58,11 +58,6 @@ export function CategoryDetail({ category }: CategoryDetailProps) {
                 {category.description}
               </p>
             </div>
-            
-            <Button variant="outline" size="lg" className="shrink-0">
-              <Download className="h-4 w-4 mr-2" />
-              Download All
-            </Button>
           </div>
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
