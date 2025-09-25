@@ -45,19 +45,23 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-2xl mx-auto"
           >
-            <div className="flex gap-3 p-3 sm:p-4 rounded-lg md:rounded-3xl bg-card border shadow-lg">
-              <div className="flex-1 relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+            <div className="relative flex gap-3 p-3 sm:p-4 rounded-lg md:rounded-3xl bg-card border shadow-lg overflow-hidden">
+              {/* Shine animation border */}
+              <div className="absolute inset-0 rounded-lg md:rounded-3xl pointer-events-none">
+                <div className="absolute inset-0 rounded-lg md:rounded-3xl bg-gradient-to-r from-transparent via-primary/20 to-transparent bg-[length:200%_100%] animate-shine opacity-60"></div>
+              </div>
+              <div className="flex-1 relative z-10">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4 z-10" />
                 <Input
                   placeholder="Search for images..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 border-0 bg-transparent text-base h-12"
+                  className="pl-10 border-0 bg-transparent text-base h-12 relative z-10"
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 />
               </div>
               
-              <Button onClick={handleSearch} className="h-12 px-8 text-white font-medium">
+              <Button onClick={handleSearch} className="h-12 px-8 text-white font-medium relative z-10">
                 Search
               </Button>
             </div>

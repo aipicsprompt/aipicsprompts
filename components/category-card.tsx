@@ -45,7 +45,7 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
       className="group"
     >
       <Link href={`/category/${id}`}>
-        <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-card to-card/80">
+        <Card className="overflow-hidden border shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-card to-card/80">
           <CardContent className="p-0">
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
