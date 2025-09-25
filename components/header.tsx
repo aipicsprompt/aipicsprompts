@@ -28,15 +28,15 @@ export function Header() {
               Home
             </Link>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/aipicsprompts" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-4 w-4 mr-2" />
-                Instagram
+                @aipicsprompts
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/aipicsprompts" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-4 w-4 mr-2" />
-                Telegram
+                @aipicsprompts
               </a>
             </Button>
           </nav>
