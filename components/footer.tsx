@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 export function Footer() {
   return (
     <motion.footer 
-      className="border-t bg-muted/50"
+      className="bg-muted/50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}

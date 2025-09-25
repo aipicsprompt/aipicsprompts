@@ -9,10 +9,7 @@ import { Button } from "@/components/ui/button"
 export function Header() {
   return (
     <motion.header 
-      className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      className="sticky top-0 z-50 w-full bg-muted/50 border-b border-border/20"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
