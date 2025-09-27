@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { PromotionModal } from '@/components/PromotionModal';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -93,6 +94,7 @@ export default function RootLayout({
               {children}
             </main>
             <Footer />
+            <PromotionModal />
           </div>
           <Toaster />
         </ThemeProvider>
