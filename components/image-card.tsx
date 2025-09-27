@@ -72,24 +72,34 @@ export function ImageCard({ id, url, prompt, alt, index }: ImageCardProps) {
     }
   }
 
+  const handleImageClick = (e: React.MouseEvent) => {
+    // Only trigger if the click is directly on the image, not on the buttons
+    if (e.target === e.currentTarget.querySelector('img')) {
+      // This will be handled by the parent's onClick
+      return;
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group"
+      className="group relative"
     >
       <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
         <CardContent className="p-0">
-          <div className="relative aspect-[3/4] overflow-hidden">
+          <div 
+            className="relative aspect-[3/4] overflow-hidden"
+            onClick={handleImageClick}
+          >
             <Image
               src={url}
               alt={alt}
               fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             
             <div className="absolute bottom-4 left-4 right-4 transition-transform duration-300">
               <div className="flex justify-between gap-2">
@@ -97,7 +107,10 @@ export function ImageCard({ id, url, prompt, alt, index }: ImageCardProps) {
                 <Button
                   size="sm"
                   variant="secondary"
-                  onClick={copyAndUseInGemini}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    copyAndUseInGemini();
+                  }}
                   className="bg-background/90 backdrop-blur-sm"
                 >
                   {geminiProcessing ? (
@@ -113,7 +126,10 @@ export function ImageCard({ id, url, prompt, alt, index }: ImageCardProps) {
                   <Button
                     size="sm"
                     variant="secondary"
-                    onClick={copyPrompt}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      copyPrompt();
+                    }}
                     className="bg-background/90 backdrop-blur-sm"
                   >
                     <Copy className="h-4 w-4" />
@@ -121,7 +137,10 @@ export function ImageCard({ id, url, prompt, alt, index }: ImageCardProps) {
                   <Button
                     size="sm"
                     variant="secondary"
-                    onClick={sharePrompt}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      sharePrompt();
+                    }}
                     className="bg-background/90 backdrop-blur-sm"
                   >
                     <Share2 className="h-4 w-4" />
@@ -139,5 +158,5 @@ export function ImageCard({ id, url, prompt, alt, index }: ImageCardProps) {
         </CardContent>
       </Card>
     </motion.div>
-  )
+  );
 }
