@@ -4,13 +4,19 @@
       "id": "men",
       "name": "Diwali Prompts for Men",
       "description": "Trending Diwali AI Prompt for Men. Make your Diwali photos more unique by simply copy-pasting our ready prompts. Create lifelike festive portraits with glowing diyas, shimmering lanterns, traditional outfits, and dreamy bokeh lights — perfect for social media, Pinterest, or digital art projects.",
-      "thumbnail": "/assets/images/men/diwali/diwali pose for men.png",
+      "thumbnail": "/assets/images/men/diwali/man1.png",
       "images": [
         {
           "id": "men-1",
-          "url": "/assets/images/men/diwali/diwali pose for men.png",
+          "url": "/assets/images/men/diwali/man1.png",
           "alt": "AI generated professional man portrait",
           "prompt": "A handsome young Indian man in traditional festive attire, wearing a pink floral patterned shirt, light grey slim fit pant and a Blue strap smartwatch. He is sitting gracefully, holding a decorated brass thali filled with lit diyas (oil lamps)in both hands.Her head is slightly tilted, with a gentle smile and expressive eyeslooking towards the camera. The background features warmglowing fairy lights, candles, and a blurred god laxmi idol, creating a devotional festive vibe. Foreground bokeh of alowing diyas adds depth. Cinematic photography, soft warm lighting, high detail, professional portrait style. For making this photo use the above photo and don't change her face it should be exact same 100%"
+        },
+        {
+          "id": "men-2",
+          "url": "/assets/images/men/diwali/man2.png",
+          "alt": "AI generated professional man portrait",
+          "prompt": "A handsome young Indian man wearing a golden kurta with white churidar pants, smiling joyfully as he holds a lit sparkler in his hand. His face glows with the warm light of the sparkler, and the background shimmers with fairy lights, candles, and marigold garlands. Foreground bokeh of diyas adds cinematic depth. Professional festive portrait, soft golden lighting, high detail, cinematic photography."
         }
       ]
     },
