@@ -145,7 +145,7 @@ export function PromotionModal() {
           </div>
           
           <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-6">
-            Join 5,000+ AI artists already creating amazing art! ✨
+            Join 1.3k+ AI artists already creating amazing art! ✨
           </p>
         </CardContent>
       </Card>

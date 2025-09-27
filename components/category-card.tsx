@@ -19,16 +19,16 @@ const formatViewCount = (count: number): string => {
   return count.toString();
 };
 
-// Function to get or initialize view count from localStorage
+  // Function to get or initialize view count from localStorage
 const getInitialViewCount = (id: string): number => {
-  if (typeof window === 'undefined') return 1000; // Default for server-side rendering
+  if (typeof window === 'undefined') return 1300; // Default for server-side rendering
   
   const storedCounts = JSON.parse(localStorage.getItem('categoryViewCounts') || '{}');
   if (storedCounts[id]) {
     return storedCounts[id];
   }
-  // Start from 1000 for new categories
-  const newCount = 100 + Math.floor(Math.random() * 900); // Random between 1000-1900
+  // Start from 1.3k for new categories
+  const newCount = 1500 + Math.floor(Math.random() * 700); // Random between 1300-2000
   storedCounts[id] = newCount;
   localStorage.setItem('categoryViewCounts', JSON.stringify(storedCounts));
   return newCount;
@@ -58,8 +58,8 @@ export function CategoryCard({ id, name, description, imageCount, thumbnail, ind
   // Initialize view count from localStorage on component mount
   useEffect(() => {
     const count = getInitialViewCount(id);
-    // Add a random increment between 10 and 50 on each page load
-    const increment = Math.floor(Math.random() * 41) + 10;
+    // Add a random increment between 20 and 100 on each page load
+    const increment = Math.floor(Math.random() * 81) + 20;
     const newCount = count + increment;
     
     setViewCount(newCount);
