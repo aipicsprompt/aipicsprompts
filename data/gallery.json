@@ -17,6 +17,12 @@
           "url": "/assets/images/men/diwali/man2.png",
           "alt": "AI generated professional man portrait",
           "prompt": "A handsome young Indian man wearing a golden kurta with white churidar pants, smiling joyfully as he holds a lit sparkler in his hand. His face glows with the warm light of the sparkler, and the background shimmers with fairy lights, candles, and marigold garlands. Foreground bokeh of diyas adds cinematic depth. Professional festive portrait, soft golden lighting, high detail, cinematic photography."
+        },
+        {
+          "id": "men-3",
+          "url": "/assets/images/men/diwali/man3.png",
+          "alt": "AI generated professional man portrait",
+          "prompt": "A young Indian man dressed in a white kurta with a saffron dupatta, holding a lit sparkler close to a rangoli decorated with diyas and flowers. He is smiling softly, with a background of goddess Laxmi idol, glowing fairy lights, and marigold garlands. Foreground diya bokeh creates cinematic depth, professional festive portrait, high detail, soft golden light, devotional and joyful vibe."
         }
       ]
     },

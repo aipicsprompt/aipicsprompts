@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'AI Pics Prompts Team' }],
   creator: 'AI Pics Prompts',
   publisher: 'AI Pics Prompts',
+  icons: {
+    icon: [
+      { url: '/assets/favicon/favicon.ico.png', sizes: '32x32', type: 'image/png' },
+      { url: '/assets/favicon/favicon2.ico.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/assets/favicon/favicon.ico.png',
+    apple: '/assets/favicon/favicon.ico.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -49,6 +57,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/assets/favicon/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/assets/favicon/favicon.ico" sizes="16x16" />
+        <link rel="icon" href="/assets/favicon/favicon.ico" sizes="96x96" />
+        <link rel="apple-touch-icon" href="/assets/favicon/favicon.ico" />
+        <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
