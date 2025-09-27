@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/sonner';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { PromotionModal } from '@/components/PromotionModal';
+import { FirecrackerEffect } from '@/components/FirecrackerEffect';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -119,14 +120,15 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} relative`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen">
+          <FirecrackerEffect />
+          <div className="relative z-10 flex flex-col min-h-screen">
             <Header />
             <main className="flex-1">
               {children}
