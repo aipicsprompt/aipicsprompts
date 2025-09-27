@@ -13,29 +13,14 @@ export function PromotionModal() {
     const hasClosedModal = sessionStorage.getItem('promotionModalClosed');
     if (hasClosedModal) return;
 
-    const handleScroll = () => {
-      const scrolled = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
-      if (scrolled >= 0.5) {
-        setIsOpen(true);
-        document.body.style.overflow = 'hidden';
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
-
-    // Add a small delay before adding scroll listener to ensure page is loaded
+    // Show modal after 1 minute (60000 milliseconds)
     const timer = setTimeout(() => {
-      // Check if already scrolled more than 50%
-      const scrolled = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
-      if (scrolled >= 0.5) {
-        setIsOpen(true);
-      } else {
-        window.addEventListener('scroll', handleScroll);
-      }
-    }, 1000);
+      setIsOpen(true);
+      document.body.style.overflow = 'hidden';
+    }, 60000);
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('scroll', handleScroll);
       document.body.style.overflow = 'auto';
     };
   }, []);
