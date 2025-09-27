@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowLeft, Download } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
 import { ImageCard } from "@/components/image-card"
 import { SkeletonCard } from "@/components/skeleton-card"
+import { ImageModal } from "@/components/image-modal"
 import { useState, useEffect } from "react"
 
 interface Category {
@@ -28,6 +28,7 @@ interface CategoryDetailProps {
 
 export function CategoryDetail({ category }: CategoryDetailProps) {
   const [loading, setLoading] = useState(true)
+  const [selectedImage, setSelectedImage] = useState<{ url: string; alt: string } | null>(null)
 
   useEffect(() => {
     // Simulate loading
@@ -86,14 +87,22 @@ export function CategoryDetail({ category }: CategoryDetailProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {category.images.map((image, index) => (
-              <ImageCard
-                key={image.id}
-                {...image}
-                index={index}
-              />
+              <div key={image.id} onClick={() => setSelectedImage({ url: image.url, alt: image.alt || image.prompt })} className="cursor-pointer">
+                <ImageCard
+                  {...image}
+                  index={index}
+                />
+              </div>
             ))}
           </motion.div>
         )}
+
+        <ImageModal
+          isOpen={!!selectedImage}
+          onClose={() => setSelectedImage(null)}
+          imageUrl={selectedImage?.url || ''}
+          altText={selectedImage?.alt || 'AI Generated Image'}
+        />
       </div>
     </div>
   )
