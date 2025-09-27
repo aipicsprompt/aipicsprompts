@@ -32,20 +32,15 @@
       "description": "Trending Diwali AI Prompt for Women. Make your Diwali photos more unique by simply copy-pasting our ready prompts. Create lifelike festive portraits with glowing diyas, shimmering lanterns, traditional outfits, and dreamy bokeh lights — perfect for social media, Pinterest, or digital art projects.",
       "thumbnail": "/assets/images/women/diwali/women-diwali-2.png",
       "images": [
+
         {
           "id": "women-diwali-1",
-          "url": "/assets/images/women/diwali/women-diwali-1.png",
-          "prompt": "A beautiful young Indian woman in a vibrant red silk saree with golden zari border, wearing traditional jewelry including jhumkas and bangles. Her hair is styled in soft curls, adorned with fresh jasmine flowers. She is holding a lit diya in both hands close to her face, smiling softly with devotion. The background glows with fairy lights, rangoli on the floor, and a blurred idol of goddess Laxmi, giving a divine festive feel. Foreground shows warm diya bokeh, cinematic portrait with soft golden lighting, high detail, professional festive photography.",
-          "alt": "Elegant Indian woman in red saree holding diya during Diwali"
-        },
-        {
-          "id": "women-diwali-2",
           "url": "/assets/images/women/diwali/women-diwali-2.png",
           "prompt": "A graceful young Indian girl in a pastel pink lehenga with floral embroidery, paired with a shimmering dupatta draped elegantly. She wears minimal gold jewelry and a delicate maang tikka. She is looking joyfully at a sparkler in her hand, with the other hand resting gently on her waist. The background features fairy lights, hanging lanterns, and blurred temple bells, creating a spiritual festive vibe. Foreground bokeh of glowing diyas adds depth, cinematic photography, soft warm lighting, professional high-resolution portrait.",
           "alt": "Young Indian woman in pink lehenga with sparkler during Diwali"
         },
         {
-          "id": "women-diwali-3",
+          "id": "women-diwali-2",
           "url": "/assets/images/women/diwali/women-diwali-3.png",
           "prompt": "A young Indian woman dressed in a simple yet elegant yellow anarkali suit with subtle embroidery, wearing silver jhumkas and glass bangles. She is sitting cross-legged on the floor, lighting a diya placed on a colorful rangoli design. The background features glowing fairy lights, marigold flower garlands, and a blurred goddess Laxmi idol. Warm diya bokeh in the foreground creates depth, devotional festive vibe, cinematic portrait with soft golden glow, high detail professional photography.",
           "alt": "Woman in yellow anarkali lighting diya during Diwali"
