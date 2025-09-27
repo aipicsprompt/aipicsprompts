@@ -6,10 +6,16 @@ import { GallerySection } from '@/components/gallery-section';
 import galleryData from '@/data/gallery.json';
 
 export default function Home() {
-  const [filteredCategories, setFilteredCategories] = useState(galleryData.categories);
+  // Add imageCount to each category
+  const categoriesWithCount = galleryData.categories.map(cat => ({
+    ...cat,
+    imageCount: cat.images.length
+  }));
+  
+  const [filteredCategories, setFilteredCategories] = useState(categoriesWithCount);
 
   const handleSearch = (query: string) => {
-    let filtered = galleryData.categories;
+    let filtered = categoriesWithCount;
 
     // Filter by search query
     if (query.trim()) {
@@ -29,7 +35,7 @@ export default function Home() {
       });
     } else {
       // If no search query, show all categories
-      filtered = galleryData.categories;
+      filtered = categoriesWithCount;
     }
 
     setFilteredCategories(filtered);
@@ -48,7 +54,7 @@ export default function Home() {
               We couldn't find any images matching your search criteria. Try different keywords or browse all categories.
             </p>
             <button 
-              onClick={() => setFilteredCategories(galleryData.categories)}
+              onClick={() => setFilteredCategories(categoriesWithCount)}
               className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
               Show All Categories

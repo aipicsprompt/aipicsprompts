@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${category.name} - AI Pics Prompts`,
-    description: `${category.description}. Browse ${category.imageCount} stunning AI-generated images in the ${category.name} category.`,
+    description: `${category.description}. Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`,
     openGraph: {
       title: `${category.name} - AI Pics Prompts`,
       description: category.description,
@@ -42,5 +42,11 @@ export default function CategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  return <CategoryDetail category={category} />;
+  // Add imageCount to the category object
+  const categoryWithCount = {
+    ...category,
+    imageCount: category.images.length
+  };
+
+  return <CategoryDetail category={categoryWithCount} />;
 }
