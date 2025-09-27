@@ -9,33 +9,63 @@ import { PromotionModal } from '@/components/PromotionModal';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ai-pics-prompts.com';
+const SITE_NAME = 'AI Pics Prompts';
+const SITE_DESCRIPTION = 'Explore thousands of stunning AI-created images across various categories. Find inspiration and copy prompts to create your own masterpieces with AI tools like Google Gemini.';
+const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/images/og-image.jpg`;
+
 export const metadata: Metadata = {
-  title: 'AI Pics Prompts - Discover Amazing AI-Generated Images',
-  description: 'Explore thousands of stunning AI-created images across various categories. Find inspiration and copy prompts to create your own masterpieces with AI tools like Google Gemini.',
-  keywords: 'AI images, artificial intelligence, generated art, prompts, gallery, creative, digital art',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'AI Pics Prompts - Discover Amazing AI-Generated Images',
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: 'AI images, artificial intelligence, generated art, prompts, gallery, creative, digital art, AI art, AI gallery, AI inspiration',
   authors: [{ name: 'AI Pics Prompts Team' }],
   creator: 'AI Pics Prompts',
   publisher: 'AI Pics Prompts',
+  applicationName: SITE_NAME,
+  generator: 'Next.js',
+  referrer: 'origin-when-cross-origin',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
       { url: '/assets/favicon/favicon.ico.png', sizes: '32x32', type: 'image/png' },
       { url: '/assets/favicon/favicon2.ico.png', sizes: '16x16', type: 'image/png' },
     ],
     shortcut: '/assets/favicon/favicon.ico.png',
-    apple: '/assets/favicon/favicon.ico.png',
+    apple: [
+      { url: '/assets/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ai-pics-prompts.com',
+    url: SITE_URL,
     title: 'AI Pics Prompts - Discover Amazing AI-Generated Images',
-    description: 'Explore thousands of stunning AI-created images across various categories.',
-    siteName: 'AI Pics Prompts',
+    description: SITE_DESCRIPTION,
+    siteName: SITE_NAME,
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: 'AI Pics Prompts - Discover Amazing AI-Generated Images',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Pics Prompts - Discover Amazing AI-Generated Images',
-    description: 'Explore thousands of stunning AI-created images across various categories.',
+    description: SITE_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+    creator: '@aipicsprompts',
+    site: '@aipicsprompts',
   },
   robots: {
     index: true,
@@ -48,6 +78,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  manifest: '/site.webmanifest',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
 };
 
 export default function RootLayout({
