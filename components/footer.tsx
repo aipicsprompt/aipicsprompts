@@ -24,13 +24,13 @@ export function Footer() {
             
             <div className="flex space-x-3">
               <Button variant="outline" size="sm" asChild>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/aipicsprompts/" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-4 w-4 mr-2" />
                   Instagram
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/aipicsprompts" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="h-4 w-4 mr-2" />
                   Telegram
                 </a>
