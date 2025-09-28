@@ -24,12 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const categoryDescription = (category as any).description || `Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`;
+  
   return {
     title: `${category.name} - AI Pics Prompts`,
-    description: `${category.description}. Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`,
+    description: categoryDescription,
     openGraph: {
       title: `${category.name} - AI Pics Prompts`,
-      description: category.description,
+      description: categoryDescription,
       images: [category.thumbnail],
     },
   };
