@@ -1,17 +1,45 @@
 {
   "categories": [
-
     {
-      "id": "Garba",
-      "name": "Garba Prompts",
-      "thumbnail": "/assets/images/women/diwali/women2.png",
+      "id": "Birthday-Prompts",
+      "name": "Birthday Prompts",
+      "thumbnail": "/assets/images/birthday/blackdress.jpeg",
       "images": [
-
         {
-          "id": "Garba1",
-          "url": "/assets/images/men/diwali/man1.png",
-          "alt": "AI generated professional man portrait",
-          "prompt": "A handsome young Indian man in traditional festive attire, wearing a pink floral patterned shirt, light grey slim fit pant and a Blue strap smartwatch. He is sitting gracefully, holding a decorated brass thali filled with lit diyas (oil lamps)in both hands.Her head is slightly tilted, with a gentle smile and expressive eyeslooking towards the camera. The background features warmglowing fairy lights, candles, and a blurred god laxmi idol, creating a devotional festive vibe. Foreground bokeh of alowing diyas adds depth. Cinematic photography, soft warm lighting, high detail, professional portrait style. For making this photo use the above photo and don't change her face it should be exact same 100%"
+          "id": "black-dress",
+          "url": "/assets/images/birthday/blackdress.jpeg",
+          "alt": "Glamorous woman in black evening dress with birthday cake",
+          "prompt": "A glamorous young woman with elegant makeup and a confident, sensual facial expression, wearing a strapless black evening dress with pearl jewelry and long pearl earrings, she is holding a small plate with a slice of pink mousse cake topped with strawberries in one hand. with the other hand, she holds a lighter close to a long golden candle that she has between her lips as if about to light it. her hair is styled in a loose elegant bun. the background shows a luxurious chandelier and a beautifully decorated christmas tree with white and gold ornaments, soft warm lighting, and a festive interior atmosphere. the style is cinematic, high-resolution, fashion photography. for making this photo use the above photo and don't change her face it should be the exact same 100%"
+        },
+        {
+          "id": "red-dress",
+          "url": "/assets/images/birthday/reddress.jpeg",
+          "alt": "Beautiful woman in maroon gown with birthday balloons",
+          "prompt": "a beautiful young woman with long, voluminous wavy brown hair styled in loose curls sits on a white bed in a cozy indoor room. she is wearing an off-shoulder, maroon colour gown, which fits her body elegantly. her makeup is glamorous and soft, featuring a glowing complexion, well-defined brows, pink blush, pink lipstick, and subtle eyeshadow. her expression is flirty and confident, with a slight smile and relaxed, seductive eyes. she is surrounded by shiny pink balloons scattered across the bed, with some leaning on her. behind her, metallic rose gold letter balloons spelling \"happy birthday\" are taped to a neutral-toned wall. the lighting is soft and warm, highlighting her features and giving the entire photo a cozy, festive atmosphere, she is leaning slightly on one elbow, with her body turned toward the camera in a relaxed yet confident pose, giving a glam birthday photoshoot vibe. camera angle: eye-level, medium close-up shot lighting: soft, indoor ambient lighting backdrop; bedroom wall with rose gold bir"
+        },
+        {
+          "id": "thinking",
+          "url": "/assets/images/birthday/thinking.jpeg",
+          "alt": "Princess-like woman with tiara at birthday table",
+          "prompt": "a beautiful young woman with fair skin and long wavy brown hair, styled neatly, wearing a soft pink puff-sleeve dress and a sparkling silver tiara crown. she is sitting at a decorated birthday table, resting her face gently on one hand with a soft, dreamy smile and calm expression. in front of her is a large round birthday cake decorated with light pink icing and several lit tall pink candles. the table is covered with a white tablecloth, pink ribbons, and elegant glassware. on the table, there are also chocolate cupcakes with white cream and pink sprinkles. two tall pink candles with bows on silver stands are placed on both sides of the cake. behind her are large white balloons, a giant pink bow, and other birthday decorations, creating a dreamy, elegant birthday party setting. lighting is warm, soft, and celebratory, capturing a magical, princess-like atmosphere. for making this photo use the above photo and don't change her face it should be the exact same 100%"
+        },
+        {
+          "id": "son-pari",
+          "url": "/assets/images/birthday/sonpari.jpeg",
+          "alt": "Glamorous woman in purple dress with tiara",
+          "prompt": "beautiful young woman (used uploaded photo reference) in a glamorous purple dress, wearing a sparkling tiara, sitting at a decorated party table with a cute layered birthday cake with candle. surrounded by balloons, flowers, and a picnic basket, spotlight shining down on her, confetti falling from above, dreamy pastel purple background, cinematic lighting, soft glow, elegant and playful mood, high detail ultra realistic, 8k portrait photography."
+        },
+        {
+          "id": "circle",
+          "url": "/assets/images/birthday/circle.jpeg",
+          "alt": "Woman blowing birthday candles with dramatic shadow",
+          "prompt": "ultra realistic portrait, a young woman with medium skin tone and sleek, straight black hair tied back in a low ponytail. she is wearing a strapless black dress and a pearl choker necklace. she is holding a white frosted birthday cake with elegant swirls and two golden number candles 'T' and 't' both lit. she is blowing towards the candles with her lips gently puckered, eyes softly closed, and expression calm and graceful. the background is a plain dark wall with a bright circular spotlight that creates a strong shadow of her profile and the cake, clearly showing the number \"25\" in the shadow. minimalistic, elegant, studio-style birthday portrait with dramatic lighting and shadows."
+        },
+        {
+          "id": "pink-dress",
+          "url": "/assets/images/birthday/pinkdress.jpeg",
+          "alt": "Woman in pink satin dress with heart-shaped cake",
+          "prompt": "beautiful young woman with long wavy brown hair styled with volume, wearing a silky light pink satin dress with thin straps and a bow on the side, She has glamorous makeup with glowing skin, rosy blush, glossy pink lips, and winged eyeliner. She is standing at a decorated birthday table, leaning sideward with her eyes closed and lips puckered in a soft kiss expression. In front of her is a large pink heart-shaped birthday cake decorated with small red hearts and elegant writing on top. On the table, there are pink roses in a glass vase, delicate baby's breath flowers in small vases, and a tray of sliced bread with a dip. The background has white walls decorated with shiny metallic spiral ribbons hanging down. The whole scene is soft, feminine, elegant, and romantic. For making this photo use the above photo and don't change her face it should be the exact same 100%"
         }
       ]
     },
@@ -44,7 +72,6 @@
           "alt": "AI generated professional man portrait",
           "prompt": "A young Indian man in a cream sherwani standing beside his father dressed in a traditional dhoti-kurta. Both are smiling as they light diyas together on a decorated rangoli. The background glows with fairy lights, flower garlands, and a blurred goddess Laxmi idol. Foreground bokeh of diyas adds cinematic depth. Captured with a 50mm f/1.8 lens, shallow depth of field, soft golden lighting, professional festive portrait."
         },
-        
         {
           "id": "women-1",
           "url": "/assets/images/women/diwali/women1.png",
@@ -83,6 +110,5 @@
         } 
       ]
     }
-
   ]
 }
