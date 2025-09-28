@@ -50,26 +50,10 @@ export function CategoryDetail({ category }: CategoryDetailProps) {
             Back to Gallery
           </Link>
           
-          <div className="relative p-6 mb-6 rounded-xl border border-border/50 bg-card/50 overflow-hidden">
-            {/* Shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full [transition:transform_0.8s_ease-in-out] pointer-events-none" />
-            
-            <div className="relative">
-              <h1 className="text-3xl lg:text-4xl font-bold mb-3">
-                {category.name}
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                {category.description}
-              </p>
-            </div>
-          </div>
+       
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>{category.images.length} {category.images.length === 1 ? 'image' : 'images'}</span>
-            <span>•</span>
-            <span>AI Generated</span>
-            <span>•</span>
-            <span>High Quality</span>
+            <span> Total {category.images.length === 1 ? 'image' : 'images'} : {category.images.length}</span>
           </div>
         </motion.div>
 
