@@ -3,6 +3,7 @@
     {
       "id": "Birthday-Prompts",
       "name": "Birthday Prompts",
+      "description": "Stunning AI-generated birthday prompts featuring glamorous women in elegant dresses and beautiful party settings. Perfect for creating memorable birthday photos with various themes including black dress elegance, colorful party vibes, and princess-like celebrations.",
       "thumbnail": "/assets/images/birthday/blackdress.jpeg",
       "images": [
         {
@@ -46,6 +47,7 @@
     {
       "id": "men",
       "name": "Diwali Prompts",
+      "description": "Trending Diwali AI Prompts for creating festive portraits. Make your Diwali photos more unique by simply copy-pasting our ready prompts. Create lifelike festive portraits with glowing diyas, shimmering lanterns, traditional outfits, and dreamy bokeh lights — perfect for social media, Pinterest, or digital art projects.",
       "thumbnail": "/assets/images/men/diwali/man1.png",
       "images": [
         {
