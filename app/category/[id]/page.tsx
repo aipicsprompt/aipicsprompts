@@ -3,6 +3,19 @@ import { Metadata } from 'next';
 import { CategoryDetail } from '@/components/category-detail';
 import galleryData from '@/data/gallery.json';
 
+interface CategoryData {
+  id: string;
+  name: string;
+  description?: string;
+  thumbnail: string;
+  images: Array<{
+    id: string;
+    url: string;
+    alt: string;
+    prompt: string;
+  }>;
+}
+
 interface PageProps {
   params: {
     id: string;
@@ -16,7 +29,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const category = galleryData.categories.find(cat => cat.id === params.id);
+  const category = galleryData.categories.find(cat => cat.id === params.id) as CategoryData | undefined;
   
   if (!category) {
     return {
@@ -24,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const categoryDescription = (category as any).description || `Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`;
+  const categoryDescription = category.description || `Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`;
   
   return {
     title: `${category.name} - AI Pics Prompts`,
@@ -38,15 +51,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default function CategoryPage({ params }: PageProps) {
-  const category = galleryData.categories.find(cat => cat.id === params.id);
+  const category = galleryData.categories.find(cat => cat.id === params.id) as CategoryData | undefined;
 
   if (!category) {
     notFound();
   }
 
-  // Add imageCount to the category object
+  // Add imageCount and ensure description exists
   const categoryWithCount = {
     ...category,
+    description: category.description || `Browse ${category.images.length} stunning AI-generated images in the ${category.name} category.`,
     imageCount: category.images.length
   };
 
